@@ -3,7 +3,7 @@ import App from './App';
 import Home from './pages/Home';
 import Accomodation from './pages/Accomodation';
 import About from './pages/About';
-import Error from './pages/Error';
+import Error from './pages/ErrorPage';
 
 export const router = createBrowserRouter([
     {
@@ -11,15 +11,17 @@ export const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                path: '/',
+                index: true,
                 element: <Home />,
             },
             {
                 path: '/accomodation',
+                caseSensitive: true,
                 element: <Accomodation />,
             },
             {
                 path: '/about',
+                caseSensitive: true,
                 element: <About />,
             },
             {
