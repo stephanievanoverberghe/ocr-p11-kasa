@@ -1,0 +1,32 @@
+@use '../../assets/styles/media-queries' as media;
+
+.header {
+    img {
+        width: 14.5rem;
+
+        @include media.md {
+            width: 18rem
+        }
+
+        @include media.lg {
+            width: 21rem
+        }
+    }
+}
+
+.headerItems {
+    font-size: 1.2rem;
+    text-align: right;
+
+    @include media.md {
+        font-size: 1.9rem
+    }
+
+    @include media.lg {
+        font-size: 2.4rem
+    }
+}
+
+.headerItem {
+    padding-right: 2.6rem;
+}
