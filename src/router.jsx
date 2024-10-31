@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
 import Home from './pages/Home';
-import Accomodation from './pages/Accomodation';
+import Accommodation from './pages/Accommodation';
 import About from './pages/About';
 import Error from './pages/ErrorPage';
 
@@ -15,9 +15,9 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: '/accomodation',
+                path: '/accommodation/:id',
                 caseSensitive: true,
-                element: <Accomodation />,
+                element: <Accommodation />,
             },
             {
                 path: '/about',
