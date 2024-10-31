@@ -1,6 +1,12 @@
 @use '../../assets/styles/media-queries' as media;
 
 .header {
+    padding: 2rem 2rem 0 2rem;
+
+    @include media.md {
+        padding: 4.5rem 10rem 0 10rem;
+    }
+
     img {
         width: 14.5rem;
 

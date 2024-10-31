@@ -1,14 +1,18 @@
-import logo from './../../../public/logo.png';
 import styles from './index.module.scss';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <header className={`${styles.header} d-flex align-center justify-between p-20`}>
-            <img src={logo} alt="" />
+        <header className={`${styles.header} d-flex align-center justify-between`}>
+            <Link to="/">
+                <img src="logo.png" alt="" />
+            </Link>
 
             <ul className={`${styles.headerItems} d-flex`}>
-                <li className={styles.headerItem}>Accueil</li>
-                <li>A propos</li>
+                <Link to="/" className={styles.headerItem}>
+                    Accueil
+                </Link>
+                <Link to="/about">A propos</Link>
             </ul>
         </header>
     );
