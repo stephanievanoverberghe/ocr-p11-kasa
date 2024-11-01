@@ -1,0 +1,77 @@
+@use '../../assets/styles/media-queries' as media;
+
+.container {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media.lg {
+        margin: 3.8rem auto;
+        width: 80%;
+    }
+}
+
+.collapse {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    width: 100%;
+
+    @include media.lg {
+        cursor: pointer;
+    }
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.open {
+    max-height: 50rem;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+.children {
+    background: var(--gray-light);
+}
+
+p {
+    padding: 2.5rem 2rem;
+    font-size: 1.3rem;
+    font-family: var(--font-montserrat);
+
+    @include media.md {
+        font-size: 1.8rem;
+    }
+}
+
+span {
+    font-size: 1.3rem;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+
+    @include media.md {
+        font-size: 1.8rem;
+    }
+}
