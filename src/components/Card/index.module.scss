@@ -10,7 +10,7 @@
 
     @include media.md {
         grid-template-columns: repeat(2, 1fr);
-        background-color: var(--gray);
+        background-color: var(--gray-light);
         padding: 5rem;
         gap: 4rem;
     }

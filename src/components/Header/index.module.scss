@@ -23,9 +23,11 @@
 .headerItems {
     font-size: 1.2rem;
     text-align: right;
+    text-transform: uppercase;
 
     @include media.md {
-        font-size: 1.9rem
+        font-size: 1.9rem;
+        text-transform: none;
     }
 
     @include media.lg {

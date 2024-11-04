@@ -6,28 +6,28 @@ import About from './pages/About';
 import Error from './pages/ErrorPage';
 
 export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />,
-        children: [
-            {
-                index: true,
-                element: <Home />,
-            },
-            {
-                path: '/accommodation/:id',
-                caseSensitive: true,
-                element: <Accommodation />,
-            },
-            {
-                path: '/about',
-                caseSensitive: true,
-                element: <About />,
-            },
-            {
-                path: '*',
-                element: <Error />,
-            },
-        ],
-    },
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/accommodation/:id',
+        caseSensitive: true,
+        element: <Accommodation />,
+      },
+      {
+        path: '/about',
+        caseSensitive: true,
+        element: <About />,
+      },
+      {
+        path: '*',
+        element: <Error />,
+      },
+    ],
+  },
 ]);

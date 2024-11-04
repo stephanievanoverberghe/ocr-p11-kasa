@@ -1,0 +1,9 @@
+@use '../../assets/styles/media-queries' as media;
+
+.main {
+    padding: 2.7rem 2rem;
+
+    @include media.md {
+        padding: 5rem 10rem;
+    }
+}

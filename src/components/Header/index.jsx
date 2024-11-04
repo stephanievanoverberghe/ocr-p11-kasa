@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className={`${styles.header} d-flex align-center justify-between`}>
       <Link to="/">
-        <img src="logo.png" alt="" />
+        <img src="/public/logo.png" alt="Logo du site" />
       </Link>
 
       <ul className={`${styles.headerItems} d-flex`}>
