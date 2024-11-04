@@ -4,15 +4,15 @@ import styles from './App.module.scss';
 import { Outlet } from 'react-router-dom';
 
 function App() {
-    return (
-        <div className={`d-flex flex-column ${styles.appContainer}`}>
-            <Header />
-            <div className="flex-fill">
-                <Outlet />
-            </div>
-            <Footer />
-        </div>
-    );
+  return (
+    <div className={`d-flex flex-column ${styles.appContainer}`}>
+      <Header />
+      <div className={`flex-fill ${styles.main}`}>
+        <Outlet />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

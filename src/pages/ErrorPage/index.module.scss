@@ -1,0 +1,35 @@
+@use '../../assets/styles/media-queries' as media;
+
+.main {
+    padding: 2.7rem 2rem;
+    flex-grow: 1;
+
+    @include media.md {
+        padding: 5rem 10rem;
+    }
+}
+
+.title {
+    font-size: 9.6rem;
+    font-weight: 700;
+    color: var(--primary);
+
+    @include media.md {
+        font-size: 28.8rem;
+    }
+}
+
+.paragraphe {
+    font-size: 1.8rem;
+    color: var(--primary);
+    text-align: center;
+
+    @include media.md {
+        font-size: 3.6rem;
+    }
+}
+
+.link {
+    color: var(--black);
+    text-decoration: underline;
+}
