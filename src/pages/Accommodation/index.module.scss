@@ -7,3 +7,136 @@
         padding: 5rem 10rem;
     }
 }
+
+.container {
+    @include media.md {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.title {
+    font-size: 1.8rem;
+    color: var(--primary);
+    padding-top: 1.5rem;
+    font-weight: 500;
+
+    @include media.md {
+        font-size: 3.6rem;
+        padding-top: 3rem;
+    }
+}
+
+.location {
+    font-size: 1.4rem;
+    color: var(--black);
+    font-weight: 500;
+    padding-top: .5rem;
+
+    @include media.md {
+        font-size: 1.8rem;
+    }
+}
+
+.tags {
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.4rem;
+
+    @include media.md {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+}
+
+.tag {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.3rem 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+
+    @include media.md {
+        padding: 0.5rem 3rem;
+        font-size: 1.4rem;
+    }
+}
+
+.ratingAndHost {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media.md {
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+}
+
+.rating {
+    gap: 0.5rem;
+
+    @include media.md {
+        gap: 1rem;
+    }
+}
+
+.starFilled,
+.starEmpty {
+    font-size: 1.3rem;
+
+    @include media.md {
+        font-size: 3.6rem;
+        padding-top: 2.1rem;
+    }
+}
+
+.starFilled {
+    color: var(--primary);
+}
+
+.starEmpty {
+    color: var(--gray-light);
+}
+
+.host {
+    gap: 0.5rem;
+}
+
+.hostName {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary);
+
+    @include media.md {
+        font-size: 1.8rem
+    }
+}
+
+.hostImage {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+    @include media.md {
+        width: 6.4rem;
+        height: 6.4rem;
+        margin-top: 2.4rem;
+    }
+}
+
+.descriptionAndEquipments {
+    @include media.md {
+        display: flex;
+        gap: 7.6rem;
+    }
+
+    >div {
+        width: 100%;
+    }
+}

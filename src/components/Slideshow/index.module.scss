@@ -1,0 +1,56 @@
+@use '../../assets/styles/media-queries' as media;
+
+.sliderShow {
+    position: relative;
+    width: 100%;
+    height: 25.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    @include media.md {
+        height: 41.5rem;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    background: none;
+    font-size: 2.4rem;
+    padding: 0.5rem;
+    z-index: 10;
+
+    @include media.md {
+        cursor: pointer;
+        font-size: 9.6rem;
+    }
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+.counter {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
