@@ -105,6 +105,10 @@
 
 .host {
     gap: 0.5rem;
+
+    @include media.md {
+        margin-top: 3.4rem;
+    }
 }
 
 .hostName {
@@ -126,7 +130,6 @@
     @include media.md {
         width: 6.4rem;
         height: 6.4rem;
-        margin-top: 2.4rem;
     }
 }
 
