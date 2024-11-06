@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import App from './App';
 import Home from './pages/Home';
 import Accommodation from './pages/Accommodation';
@@ -25,8 +25,12 @@ export const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: '*',
+        path: '/404',
         element: <Error />,
+      },
+      {
+        path: '*',
+        element: <Navigate to="/404" replace />,
       },
     ],
   },

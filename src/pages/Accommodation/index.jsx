@@ -15,7 +15,7 @@ function Accommodation() {
     if (foundAccommodation) {
       setAccommodation(foundAccommodation);
     } else {
-      navigate('*', { replace: true });
+      navigate('/404', { replace: true });
     }
   }, [id, navigate]);
 
