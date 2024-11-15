@@ -3,12 +3,12 @@
 .sliderShow {
     position: relative;
     width: 100%;
-    height: 25.5rem;
+    height: 255px;
     overflow: hidden;
     border-radius: 1rem;
 
     @include media.md {
-        height: 41.5rem;
+        height: 415px;
     }
 }
 

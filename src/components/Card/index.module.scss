@@ -23,13 +23,13 @@
 
 .card {
     position: relative;
-    height: min(30vw, 25.5rem);
+    height: 255px;
     width: 100%;
     border-radius: 1rem;
     overflow: hidden;
 
     @include media.md {
-        height: min(300vw, 34rem);
+        height: 340px;
     }
 
     img {
